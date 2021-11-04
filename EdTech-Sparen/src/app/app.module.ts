@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { CollectionOverviewComponent } from './collection-overview/collection-overview.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OverviewComponent } from './components/overview/overview.component';
     HeaderComponent,
     FooterComponent,
     LeftSidebarComponent,
-    OverviewComponent
+    OverviewComponent,
+    CollectionOverviewComponent
   ],
   imports: [
     BrowserModule,
