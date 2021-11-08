@@ -9,6 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { CollectionOverviewComponent } from './collection-overview/collection-overview.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { CollectionOverviewComponent } from './collection-overview/collection-ov
     FooterComponent,
     LeftSidebarComponent,
     OverviewComponent,
-    CollectionOverviewComponent
+    CollectionOverviewComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatTabsModule,
+    MatButtonToggleModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

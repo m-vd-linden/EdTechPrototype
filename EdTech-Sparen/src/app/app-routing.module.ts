@@ -5,11 +5,11 @@ import { WrapperComponent } from './components/wrapper/wrapper.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'app',
     component: AppComponent
   },
   {
-    path: 'app',
+    path: '',
     component: WrapperComponent,
     children: [{
       path: '',

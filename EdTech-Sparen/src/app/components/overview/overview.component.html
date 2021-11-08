@@ -26,28 +26,66 @@
     <!-- Main content -->
     <section class="content">
 
+      <mat-tab-group animationDuration="0ms">
+        <mat-tab label="Optie 1">
       <!-- Default box -->
-      <form>
-        <div class="card-body">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Wat ging er goed deze week?</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Wat ging er niet goed deze week?</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Welke stappen ga je ondernemen?</label>
-            <input type="text" class="form-control" id="exampleInputPassword2">
-          </div>
-        </div>
-        <!-- /.card-body -->
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Wat ging er goed deze week?</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Wat ging er niet goed deze week?</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Welke stappen ga je ondernemen?</label>
+                <input type="text" class="form-control" id="exampleInputPassword2">
+              </div>
+            </div>
+            <!-- /.card-body -->
 
-        <div class="card-footer">
-          <button type="submit" class="btn btn-primary">Feedback opslaan</button>
-        </div>
-      </form>
+            <div class="card-body">
+              <button type="submit" class="btn btn-primary">Feedback opslaan</button>
+            </div>
+          </form>
+        </mat-tab>
+        <mat-tab label="Optie 2">
+          <!-- Default box -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Hoe vond je het gesprek gaan?</label>
+                    <mat-button-toggle-group aria-label="Font Style 2" class="float-right">
+                      <mat-button-toggle value="bold">Goed</mat-button-toggle>
+                      <mat-button-toggle value="italic">Slecht</mat-button-toggle>
+                      <mat-button-toggle value="underline">Neutraal</mat-button-toggle>
+                    </mat-button-toggle-group>
+                  </div>
+                  <br/>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Heb je ergens een achterstand?</label>
+                    <mat-button-toggle-group aria-label="Font Style" class="float-right">
+                      <mat-button-toggle value="bold">Ja</mat-button-toggle>
+                      <mat-button-toggle value="italic">Nee</mat-button-toggle>
+                      <mat-button-toggle value="underline">Is me niet duidelijk</mat-button-toggle>
+                    </mat-button-toggle-group>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Zo ja, bij welk vak?">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Welke stappen ga je ondernemen?</label>
+                    <input type="text" class="form-control" id="exampleInputPassword2">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+    
+                <div class="card-body">
+                  <button type="submit" class="btn btn-primary">Feedback opslaan</button>
+                </div>
+              </form>
+            </mat-tab>
+      </mat-tab-group>
       <!-- /.card -->
 
     </section>
