@@ -53,64 +53,23 @@
                             <th>Docent</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody *ngFor="let fb of feedback">
                           <tr data-widget="expandable-table" aria-expanded="false">
-                            <td>08-11-2021</td>
-                            <td>Mentorgesprek</td>
-                            <td>Mentor X</td>
+                            <td>{{this.dateTimetoDate(fb.date).toLocaleDateString()}}</td>
+                            <td>{{fb.course}}</td>
+                            <td>Teacher ID: {{fb.reviewerId}}</td>
                           </tr>
                           <tr class="expandable-body d-none">
                             <td colspan="5">
                               <p>
-                                  <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+                                  <strong>Wat ging er goed?</strong> <br/>{{fb.q1}}<br/>
+                                  <strong>Wat ging er niet goed?</strong> <br/>{{fb.q2}}<br/>
+                                  <strong>Welke stappen ga je ondernemen?</strong> <br/>{{fb.q3}}<br/>
                               </p>
                             </td>
-                          </tr>
-                          <tr data-widget="expandable-table" aria-expanded="false">
-                            <td>15-11-2021</td>
-                            <td>Mentorgesprek</td>
-                            <td>Mentor X</td>
-                          </tr>
-                          <tr class="expandable-body d-none">
-                            <td colspan="5">
-                              <p>
-                                  <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr data-widget="expandable-table" aria-expanded="false">
-                            <td>22-11-2021</td>
-                            <td>Mentorgesprek</td>
-                            <td>Mentor X</td>
-                          </tr>
-                          <tr class="expandable-body d-none">
-                            <td colspan="5">
-                              <p>
-                                  <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr data-widget="expandable-table" aria-expanded="false">
-                            <td>29-11-2021</td>
-                            <td>Mentorgesprek</td>
-                            <td>Mentor X</td>
-                          </tr>
-                          <tr class="expandable-body d-none">
-                            <td colspan="5">
-                              <p>
-                                  <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                                  <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
-                              </p>
-                            </td>
-                          </tr>
+                          </tr> 
                         </tbody>
+                      
                       </table>
                 </div>
                 <!-- /.card-body -->
@@ -122,3 +81,47 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+  <!-- <tr data-widget="expandable-table" aria-expanded="false">
+    <td>15-11-2021</td>
+    <td>Mentorgesprek</td>
+    <td>Mentor X</td>
+  </tr>
+  <tr class="expandable-body d-none">
+    <td colspan="5">
+      <p>
+          <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+      </p>
+    </td>
+  </tr>
+  <tr data-widget="expandable-table" aria-expanded="false">
+    <td>22-11-2021</td>
+    <td>Mentorgesprek</td>
+    <td>Mentor X</td>
+  </tr>
+  <tr class="expandable-body d-none">
+    <td colspan="5">
+      <p>
+          <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+      </p>
+    </td>
+  </tr>
+  <tr data-widget="expandable-table" aria-expanded="false">
+    <td>29-11-2021</td>
+    <td>Mentorgesprek</td>
+    <td>Mentor X</td>
+  </tr>
+  <tr class="expandable-body d-none">
+    <td colspan="5">
+      <p>
+          <strong>Wat ging er goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Wat ging er niet goed?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+          <strong>Welke stappen ga je ondernemen?</strong> <br/>Lorem Ipsum Dolor Sit Amet <br/>
+      </p>
+    </td>
+  </tr> -->
