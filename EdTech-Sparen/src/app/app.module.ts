@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,15 @@ import { HomeComponent } from './components/home/home.component';
     LeftSidebarComponent,
     OverviewComponent,
     CollectionOverviewComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     MatTabsModule,
     MatButtonToggleModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [],
